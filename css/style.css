@@ -1,0 +1,155 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+/* Variabler: genbruges og gør designvalg enkle */
+
+
+
+:root {
+  /* farver */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --creme: #ebebde;
+  --brown: #49433e;
+  /* fonte */
+  --font: 'Abel', sans-serif;
+  /* brødtekst */
+  --displayH: 'Abel', sans-serif;;
+  /* overskrifter */
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--creme);
+  font-family: var(--font);
+  margin: 0;
+}
+
+/* Typografi */
+h1 {
+  text-align: center;
+  font-family: var(--displayH);
+}
+
+/* header */
+header {
+  display: flex;
+  background-color: var(--creme);
+  justify: center;
+  height: 100px;
+}
+
+/* content */
+#content {
+  background-image: url('../images/baggrund.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  border-top: 100px solid transparent;
+}
+
+/*baggrund */
+#baggrund {
+  height: auto;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  */
+#left-content {
+  float: left;
+}
+
+#right-content {
+  float: right;
+  margin-right: 25px;
+}
+
+#left-content, #right-content {
+  margin-top: 73px;
+  font-size: 22px;
+}
+
+#midt {
+text-align: center;
+  }
+
+header {
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color: var(--brown);
+  padding-left: 80px;
+  padding-right: 80px;
+  word-spacing: 120px;
+  /*fjerner bullets ved lister*/
+}
+
+#venstre, #hoejre {
+  background-color: #;
+
+}
+
+li {
+  display: inline;
+}
+
+
+#midt {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  background-color: var(--creme);
+  height: 70px;
+  border-top: 1px solid var(--brown);
+  text-align: center;
+  color: var(--brown);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content:space-between;
+  }
+
+  .social {
+word-spacing: 11px;
+}
+
+  .kvinde {
+    text-align: center;
+    }
+
+    .k {
+font-size: 16px;
+font-weight: bold;
+      }
+
+
+/* Layout: Flexbox */
